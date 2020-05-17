@@ -50,13 +50,9 @@ public class SheetAdmin extends AppCompatActivity {
                 setLayout("Date", sheetOneModel.getDate());
                 setLayout("No of Runs Days", sheetOneModel.getRundays());
 
-
-
                 TextView textView= new TextView(SheetAdmin.this);
                 textView.setText("_________________________________________________");
                 layout.addView(textView);
-
-
 
                 ArrayList<SheetTwoModel> list = sheetOneModel.getSheetTwoArrayList();
                 for(SheetTwoModel items:list)
@@ -65,7 +61,12 @@ public class SheetAdmin extends AppCompatActivity {
                     setLayout("Lap",items.getLap());
                     setLayout("Output",items.getOutput());
                     setLayout("Target",items.getTarget());
+
+                    TextView textView1= new TextView(SheetAdmin.this);
+                    textView1.setText("_________________________________________________");
+                    layout.addView(textView1);
                 }
+
                 progressDialog.hide();
             }
 

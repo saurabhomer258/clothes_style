@@ -49,13 +49,15 @@ public class CommonStyleData extends AppCompatActivity
                 if(dataSnapshot!=null)
                 {
                     StyleSheetModel styleSheetModel = dataSnapshot.getValue(StyleSheetModel.class);
-                    setLayout("Sheet Number",STYLE_NUMBER);
-                    setLayout("BuyersName",styleSheetModel.getBuyersName());
-//                    setLayout("ProduectName",styleSheetModel.getProduectName());
-//                    setLayout("OrderQuality",styleSheetModel.getOrderQuality());
+                    setLayout("Sheet Number",styleSheetModel.getSheetNumber());
+                    setLayout("Buyers Name",styleSheetModel.getBuyersName());
+                    setLayout("Produect Detail",styleSheetModel.getProduectDetail());
+                    setLayout("Total Quality", styleSheetModel.getTotalQuality());
                     setLayout("ShipmentDate",styleSheetModel.getShipmentDate());
-//                    setLayout("color",styleSheetModel.getColor());
-//                    setLayout("size",styleSheetModel.getSize());
+                    setLayout("Sum",styleSheetModel.getSum());
+                    setLayout("Line Number",styleSheetModel.getLineNumber());
+                    setLayout("Line Efficiency",styleSheetModel.getLineEfficiency());
+                    setLayout("Size",styleSheetModel.getSize());
 
                     progressDialog.hide();
                 }

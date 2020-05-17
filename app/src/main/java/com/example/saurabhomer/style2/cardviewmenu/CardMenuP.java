@@ -20,7 +20,8 @@ public class CardMenuP extends AppCompatActivity
     private ProgressDialog progressDialog;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_card_menu_p);
         CardView style = findViewById(R.id.cardview_style);
