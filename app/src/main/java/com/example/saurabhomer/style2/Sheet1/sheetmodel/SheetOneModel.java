@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class SheetOneModel {
 
     private String totalman,remainingquantity,totallineoutput,rundays,date;
-    private ArrayList<SheetTwo> sheetTwoArrayList;
+    private ArrayList<SheetTwoModel> sheetTwoArrayList;
 
 
     public String getTotalman() {
@@ -50,11 +50,11 @@ public class SheetOneModel {
         this.date = date;
     }
 
-    public ArrayList<SheetTwo> getSheetTwoArrayList() {
+    public ArrayList<SheetTwoModel> getSheetTwoArrayList() {
         return sheetTwoArrayList;
     }
 
-    public void setSheetTwoArrayList(ArrayList<SheetTwo> sheetTwoArrayList) {
+    public void setSheetTwoArrayList(ArrayList<SheetTwoModel> sheetTwoArrayList) {
         this.sheetTwoArrayList = sheetTwoArrayList;
     }
 }

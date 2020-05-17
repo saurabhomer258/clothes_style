@@ -10,14 +10,21 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 
 import com.example.saurabhomer.style2.R;
+import com.example.saurabhomer.style2.Sheet1.sheetmodel.SheetOneModel;
+import com.example.saurabhomer.style2.Sheet1.sheetmodel.SheetTwoModel;
+import com.example.saurabhomer.style2.utils.CommonStyleData;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 
 public class SheetOne extends AppCompatActivity implements
         View.OnClickListener
 {
 
+    static SheetOneModel sheetOneModel = new SheetOneModel();
+    static ArrayList<SheetTwoModel> sheetTwoModels = new ArrayList<>();
     private int mYear, mMonth, mDay, mHour, mMinute;
+    Button info_btn;
     ImageButton btnDatePicker;
     EditText txtDate;
     @Override
@@ -28,6 +35,7 @@ public class SheetOne extends AppCompatActivity implements
         txtDate=(EditText)findViewById(R.id.in_date);
         btnDatePicker.setOnClickListener(this);
 
+        info_btn = (Button)findViewById(R.id.info_daily);
         final EditText totalman = findViewById(R.id.edt_totalman).findViewById(R.id.atvCommon);
         final EditText remainingquantity = findViewById(R.id.edt_remaining).findViewById(R.id.atvCommon);
         final EditText totallineoutput = findViewById(R.id.edt_totallineoutput).findViewById(R.id.atvCommon);
@@ -38,7 +46,21 @@ public class SheetOne extends AppCompatActivity implements
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                sheetOneModel.setDate(txtDate.getText().toString());
+                sheetOneModel.setTotalman(totalman.getText().toString());
+                sheetOneModel.setRemainingquantity(remainingquantity.getText().toString());
+                sheetOneModel.setTotallineoutput(totallineoutput.getText().toString());
+                sheetOneModel.setRundays(rundays.getText().toString());
                 Intent intent = new Intent(SheetOne.this,SheetTwo.class);
+                startActivity(intent);
+            }
+        });
+
+        info_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SheetOne.this, CommonStyleData.class);
                 startActivity(intent);
             }
         });
