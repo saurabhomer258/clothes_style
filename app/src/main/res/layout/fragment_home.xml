@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:weightSum="10"
+
+android:layout_margin="20dp"
+        android:layout_gravity="center"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+        <com.example.saurabhomer.style2.customView.SeachEditText
+            android:layout_width="0dp"
+
+            android:layout_marginTop="6dp"
+
+            android:layout_height="40dp"
+            android:layout_weight="7"
+            android:id="@+id/edt_styleno" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_margin="7dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/btnsignup_gradient"
+        android:text="Search"
+        android:textColor="#FFFFFF"
+
+/>
+
+    </LinearLayout>
+
+
