@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Area of Inside Carton"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:weightSum="10"
+            android:gravity="center"
+            android:layout_marginEnd="14dp"
+            android:layout_marginStart="14dp"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Hour"
+
+                android:layout_weight="3"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/common_text_size" />
+
+
+            <com.example.saurabhomer.style2.customView.DailyFinishingEditText
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:id="@+id/edt_hour" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:weightSum="10"
+            android:gravity="center"
+            android:layout_marginEnd="14dp"
+            android:layout_marginStart="14dp"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Carton Quantity"
+
+                android:layout_weight="3"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/common_text_size" />
+
+
+            <com.example.saurabhomer.style2.customView.DailyFinishingEditText
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:id="@+id/edt_cartoon" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:weightSum="10"
+            android:gravity="center"
+            android:layout_marginEnd="14dp"
+            android:layout_marginStart="14dp"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="TOTAL CHECK QUANTITY(20%)"
+
+                android:layout_weight="3"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/common_text_size" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:layout_marginLeft="20dp"
+                android:textSize="@dimen/common_text_size"
+                android:id="@+id/checkquantity"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:weightSum="10"
+            android:gravity="center"
+            android:layout_marginEnd="14dp"
+            android:layout_marginStart="14dp"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Defect"
+                android:layout_marginTop="20dp"
+                android:layout_weight="3"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:weightSum="10"
+            android:gravity="center"
+            android:layout_marginEnd="14dp"
+            android:layout_marginStart="14dp"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Blister of Polybag"
+                android:layout_weight="3"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/common_text_size" />
+
+
+            <customView.RadioButtonNOTOK
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="7"
+                android:id="@+id/edt_blister" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:weightSum="10"
+            android:gravity="center"
+            android:layout_marginEnd="14dp"
+            android:layout_marginStart="14dp"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Damage Blister of Polybag"
+                android:layout_weight="3"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/common_text_size" />
+
+
+            <customView.RadioButtonNOTOK
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="7"
+                android:id="@+id/edt_damage_blister" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:weightSum="10"
+            android:gravity="center"
+            android:layout_marginEnd="14dp"
+            android:layout_marginStart="14dp"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Assortment"
+
+                android:layout_weight="3"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/common_text_size" />
+
+
+            <customView.RadioButtonNOTOK
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="7"
+                android:id="@+id/edt_assorment" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:weightSum="10"
+            android:gravity="center"
+            android:layout_marginEnd="14dp"
+            android:layout_marginStart="14dp"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+
+                android:layout_weight="3"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/common_text_size" />
+
+
+            <customView.RadioButtonNOTOK
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="7"
+                android:id="@+id/edt_quantity" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:weightSum="10"
+            android:gravity="center"
+            android:layout_marginEnd="14dp"
+            android:layout_marginStart="14dp"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Item"
+
+                android:layout_weight="3"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/common_text_size" />
+
+
+            <customView.RadioButtonNOTOK
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="7"
+                android:id="@+id/edt_item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:weightSum="10"
+            android:gravity="center"
+            android:layout_marginEnd="14dp"
+            android:layout_marginStart="14dp"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Colour"
+
+                android:layout_weight="3"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/common_text_size" />
+
+
+            <customView.RadioButtonNOTOK
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="7"
+                android:id="@+id/edt_colour" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:weightSum="10"
+            android:gravity="center"
+            android:layout_marginEnd="14dp"
+            android:layout_marginStart="14dp"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Ratio"
+
+                android:layout_weight="3"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/common_text_size" />
+
+
+            <customView.RadioButtonNOTOK
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="7"
+                android:id="@+id/edt_ratio" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:weightSum="10"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:layout_marginEnd="14dp"
+            android:layout_marginStart="14dp"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Total defect count"
+                android:layout_weight="3"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/common_text_size" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/common_text_size"
+                android:id="@+id/total_defect"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:weightSum="10"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:layout_marginEnd="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/common_text_color"
+            android:textSize="@dimen/common_text_size"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Remarks"
+
+                android:layout_weight="3"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/common_text_size" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+
+                android:layout_marginStart="10dp"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/common_text_size"
+                android:id="@+id/remarks"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <customView.NextButton
+                android:id="@+id/btn_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:padding="5dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:weightSum="6"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <customView.NextButton
+                android:layout_width="0dp"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:id="@+id/btn_next" />
+
+            <customView.DoneButton
+                android:layout_width="0dp"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:id="@+id/btn_done_measurement" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.saurabhomer.style2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_noshadow"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".InlinePrelineFinal.ResultViewForActivity" />
+        <activity android:name=".admin.InlineFinalPreLineAdmin" />
+        <activity android:name=".InlinePrelineFinal.InlinePrelineFinal3" />
+        <activity android:name=".utils.CommonDailyDateFilter" />
+        <activity android:name=".utils.CommonDateFilter" />
+        <activity android:name=".admin.CartoonAuditAdmin" />
+        <activity android:name=".cardviewmenu.CardMenuP" />
+        <activity android:name=".utils.CommonStyleData" />
+        <activity android:name=".utils.DatePicker" />
+        <activity android:name=".CartoonAudit.AreaOfPackingMaterial" />
+        <activity android:name=".CartoonAudit.AreaOfInsideCartoon" />
+        <activity android:name=".CartoonAudit.AreaofOutsideCartoon" />
+        <activity android:name=".InlinePrelineFinal.InlinePrelineFinal" />
+        <activity android:name=".CartoonAudit.CartoonAudit" />
+        <activity android:name=".HourlyLotAuditReport.HourlyLotAudit" />
+        <activity android:name=".admin.MetelDetectionAdmin" />
+        <activity android:name=".MeasurementDescription" />
+        <activity android:name=".MainSheet" />
+        <activity android:name=".MetelDetectionPage.MetelDetectionPage" />
+        <activity android:name=".SkuCheckReport.SkuCheckReport100Page2" />
+        <activity android:name=".Measurement.Measurment" />
+        <activity android:name=".DailyFinishingAnalysis.DailyFinishingAnalysis2" />
+        <activity android:name=".DailyFinishingAnalysis.DailyFinishingDefectAnalysis" />
+        <activity android:name=".OutSide.DailyFinishingAnalysisOutside" />
+        <activity android:name=".OutSide.DailyFinishingDefectAnalysisOutside" />
+        <activity android:name=".GetUp.DailyFinishingAnalysisGetup" />
+        <activity android:name=".GetUp.ResultViewForActivity" />
+        <activity android:name=".GetUp.GetupResultView" />
+        <activity android:name=".OutSide.OutsideResultView" />
+        <activity android:name=".GetUp.DailyFinishingDefectAnalysisGetup" />
+        <activity android:name=".admin.DailyfinishingOutsideAdmin" />
+        <activity android:name=".admin.DailyfinishingGetUpAdmin" />
+        <activity android:name=".dialog.DailyFinishingGetupResult" />
+        <activity android:name=".dialog.DailyFinishingOutsideResult" />
+        <activity
+            android:name=".SignUpActivity"
+            android:label="@string/title_activity_sign_up"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".RegistrationActivity" />
+        <activity android:name=".SplashScrActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".PWresetActivity" />
+        <activity android:name=".ui.gallery.MainSheet" />
+        <activity android:name=".admin.DailyfinishingAdmin" />
+        <activity android:name=".Measurement.Mesurement1" />
+        <activity android:name=".hourlylot.HourlyLot" />
+        <activity android:name=".hourlylot.HourlyLot2" />
+        <activity android:name=".SkuCheckReport.SkuCheckReport100Page1" />
+        <activity android:name=".admin.SkuAdmin" />
+        <activity android:name=".dialog.DailyFInishingResult" />
+        <activity android:name=".OutSide.ResultViewForActivity" />
+        <activity android:name=".DailyFinishingAnalysis.InsideResultView" />
+        <activity android:name=".DailyFinishingAnalysis.ResultViewForActivity" />
+        <activity android:name=".Measurement.Measurement2" />
+        <activity android:name=".Measurement.ResultViewForActivity" />
+        <activity android:name=".admin.MesurementAdmin" />
+        <activity android:name=".Measurement.ResultViewFinalForActivity" />
+        <activity android:name=".InlinePrelineFinal.InlinePreLineFinal1" />
+        <activity android:name=".InlinePrelineFinal.inlinePreLineFInal2" />
+        <activity android:name=".menus.Main3Activity"></activity>
+    </application>
+
+</manifest>

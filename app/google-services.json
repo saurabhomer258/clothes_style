@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "859453939285",
+    "firebase_url": "https://qualityapp2.firebaseio.com",
+    "project_id": "qualityapp2",
+    "storage_bucket": "qualityapp2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:859453939285:android:6b6ea3d48a54a264c8bedc",
+        "android_client_info": {
+          "package_name": "com.example.saurabhomer.style2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "859453939285-d7rhb6h7a9vt8jbqo7vctd2vpmve00so.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.saurabhomer.style2",
+            "certificate_hash": "7562d633822756fd3b6fd35ed2efcd2decd9b296"
+          }
+        },
+        {
+          "client_id": "859453939285-33df863hd820eqjo3pn5fhtq9cs2a2co.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpFngP8yawQsfZzsJDoDZDUa70sRI3TEM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "859453939285-33df863hd820eqjo3pn5fhtq9cs2a2co.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
