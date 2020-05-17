@@ -10,6 +10,8 @@ import android.view.View;
 
 import com.example.saurabhomer.style2.R;
 
+import com.example.saurabhomer.style2.Sheet1.SheetOne;
+import com.example.saurabhomer.style2.Sheet1.admin.SheetAdmin;
 import com.example.saurabhomer.style2.pref.LoginPref;
 import com.example.saurabhomer.style2.utils.CommonDailyDateFilter;
 
@@ -21,7 +23,7 @@ public class CardMenuP extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_card_menu_p);
-//        CardView inside = findViewById(R.id.cardview_inside);
+        CardView style = findViewById(R.id.cardview_style);
 //        CardView outside = findViewById(R.id.cardview_outside);
 //        CardView getup = findViewById(R.id.cardview_getup);
 //        CardView measurmentreport = findViewById(R.id.cardview_measurmentreport);
@@ -37,14 +39,25 @@ public class CardMenuP extends AppCompatActivity
 
 
         }
+
+        style.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (LoginPref.getInstance(getApplicationContext()).getAdmin().equals(1 + "")) {
+                    Intent i =  new Intent(CardMenuP.this, SheetAdmin.class);
+                    startActivity(i);
+                }
+                else {
+                    Intent i = new Intent(CardMenuP.this, SheetOne.class);
+                    startActivity(i);
+                }
+                progressDialog.hide();
+            }
+        });
     }
-//        inside.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                openDailyFinishingcheck();
-//            }
-//        });
-//        outside.setOnClickListener(new View.OnClickListener() {
+
+
+    //        outside.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
 //                openDailyFinishingOutsidecheck();

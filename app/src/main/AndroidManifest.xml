@@ -9,6 +9,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Sheet1.admin.SheetAdmin"></activity>
+        <activity android:name=".Sheet1.SheetTwo" />
+        <activity android:name=".Sheet1.SheetOne" />
         <activity android:name=".InlinePrelineFinal.ResultViewForActivity" />
         <activity android:name=".admin.InlineFinalPreLineAdmin" />
         <activity android:name=".InlinePrelineFinal.InlinePrelineFinal3" />
@@ -79,7 +82,7 @@
         <activity android:name=".Measurement.ResultViewFinalForActivity" />
         <activity android:name=".InlinePrelineFinal.InlinePreLineFinal1" />
         <activity android:name=".InlinePrelineFinal.inlinePreLineFInal2" />
-        <activity android:name=".menus.Main3Activity"></activity>
+        <activity android:name=".menus.Main3Activity" />
     </application>
 
 </manifest>
