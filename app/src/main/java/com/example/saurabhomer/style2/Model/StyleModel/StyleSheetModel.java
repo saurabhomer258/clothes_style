@@ -22,6 +22,9 @@ public class StyleSheetModel {
         this.size = size;
     }
 
+    public StyleSheetModel() {
+    }
+
     private String lineNumber;
     private String lineEfficiency;
 
