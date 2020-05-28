@@ -165,11 +165,15 @@
                 android:textSize="@dimen/common_text_size" />
 
 
-            <com.example.saurabhomer.style2.customView.DailyFinishingEditText
+            <TextView
                 android:layout_width="0dp"
 
                 android:layout_height="wrap_content"
                 android:layout_weight="7"
+                android:layout_marginLeft="30dp"
+
+                android:textColor="@color/common_text_color"
+                android:textSize="18dp"
                 android:id="@+id/edt_no_rundays" />
 
         </LinearLayout>

@@ -38,8 +38,18 @@ public class ResultActivity extends AppCompatActivity {
             setLayout("Lap",items.getLap());
             setLayout("Output",items.getOutput());
             setLayout("Target",items.getTarget());
-            sum = sum + Integer.parseInt(items.getOutput());
-            sum2 = sum2 + Integer.parseInt(items.getTarget());
+            try {
+                sum = sum + Integer.parseInt(items.getOutput());
+            }
+            catch (Exception e){
+
+            }
+            try {
+                sum2 = sum2 + Integer.parseInt(items.getTarget());
+            }
+            catch (Exception e){
+
+            }
         }
         setLayout();
         setLayout("Total Output ", ""+sum);
@@ -62,7 +72,7 @@ public class ResultActivity extends AppCompatActivity {
             String res = "";
 
             textView.setText(object + " : " + result);
-            textView.setTextColor(R.color.black);
+            textView.setTextColor(this.getResources().getColor(R.color.black));
             layout.addView(textView);
         }
     }

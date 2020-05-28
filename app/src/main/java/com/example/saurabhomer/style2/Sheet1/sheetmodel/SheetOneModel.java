@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class SheetOneModel {
 
-    private String totalman,remainingquantity,totallineoutput,rundays,date;
+    private String totalman,remainingquantity,totallineoutput,rundays,date,currentTime;
     private ArrayList<SheetTwoModel> sheetTwoArrayList;
 
 
@@ -24,6 +24,14 @@ public class SheetOneModel {
 
     public void setRemainingquantity(String remainingquantity) {
         this.remainingquantity = remainingquantity;
+    }
+
+    public String getCurrentTime() {
+        return currentTime;
+    }
+
+    public void setCurrentTime(String currentTime) {
+        this.currentTime = currentTime;
     }
 
     public String getTotallineoutput() {

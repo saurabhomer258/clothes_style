@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.example.saurabhomer.style2.R;
@@ -30,7 +31,7 @@ public class SheetTwo extends AppCompatActivity {
 
 
 
-        final EditText time = findViewById(R.id.edt_time).findViewById(R.id.atvCommon);
+        final Spinner time = findViewById(R.id.edt_time).findViewById(R.id.spinner);
         final EditText lap = findViewById(R.id.edt_lap).findViewById(R.id.atvCommon);
         final EditText target = findViewById(R.id.edt_target).findViewById(R.id.atvCommon);
         final EditText output = findViewById(R.id.edt_output).findViewById(R.id.atvCommon);
@@ -41,13 +42,14 @@ public class SheetTwo extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 SheetTwoModel sheetTwoModel = new SheetTwoModel();
-                sheetTwoModel.setTime(time.getText().toString());
+                sheetTwoModel.setTime(time.getSelectedItem().toString());
                 sheetTwoModel.setLap(lap.getText().toString());
                 sheetTwoModel.setOutput(output.getText().toString());
                 sheetTwoModel.setTarget(target.getText().toString());
                 sheetTwoModels.add(sheetTwoModel);
                 Intent intent = new Intent(SheetTwo.this,SheetTwo.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -56,7 +58,7 @@ public class SheetTwo extends AppCompatActivity {
             public void onClick(View v) {
 
                 SheetTwoModel sheetTwoModel = new SheetTwoModel();
-                sheetTwoModel.setTime(time.getText().toString());
+                sheetTwoModel.setTime(time.getSelectedItem().toString());
                 sheetTwoModel.setLap(lap.getText().toString());
                 sheetTwoModel.setOutput(output.getText().toString());
                 sheetTwoModel.setTarget(target.getText().toString());
@@ -74,6 +76,7 @@ public class SheetTwo extends AppCompatActivity {
                 });
                 Intent intent = new Intent(SheetTwo.this, ResultActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

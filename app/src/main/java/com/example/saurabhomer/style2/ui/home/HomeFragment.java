@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.saurabhomer.style2.Model.StyleModel.StyleSheetModel;
 import com.example.saurabhomer.style2.R;;
 import com.example.saurabhomer.style2.cardviewmenu.CardMenuP;
 import com.example.saurabhomer.style2.utils.NetworkUtils;
@@ -25,6 +26,7 @@ public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
     public static String STYLE_NUMBER;
+    public static String date_in_globler;
     private Button submitBtn;
     private ProgressDialog progressDialog;
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -45,7 +47,7 @@ public class HomeFragment extends Fragment {
                     return;
                 }
                 FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
-                DatabaseReference users = firebaseDatabase.getReference("mainSeet");
+                DatabaseReference users = firebaseDatabase.getReference("styles");
                 users.child(edt_styleno.getText().toString()).addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
@@ -53,7 +55,18 @@ public class HomeFragment extends Fragment {
                             progressDialog.dismiss();
                            Intent i = new Intent(getContext(), CardMenuP.class);
                             STYLE_NUMBER =  edt_styleno.getText().toString().trim();
-                           i.putExtra("style",edt_styleno.getText().toString());
+
+                            StyleSheetModel styleSheetModel = dataSnapshot.getValue(StyleSheetModel.class);
+
+                            if( styleSheetModel != null && styleSheetModel.getShipmentDate() !=null){
+
+                                date_in_globler = styleSheetModel.getShipmentDate();
+                            }
+                            else {
+                                date_in_globler  = "";
+                            }
+
+                                    i.putExtra("style",edt_styleno.getText().toString());
                            startActivity(i);
                         }
                         else {

@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.saurabhomer.style2.R;
 import com.example.saurabhomer.style2.Sheet1.sheetmodel.SheetOneModel;
@@ -44,29 +45,33 @@ public class SheetAdmin extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot)
             {
                 SheetOneModel sheetOneModel = dataSnapshot.getValue(SheetOneModel.class);
-                setLayout("Total Man Power",sheetOneModel.getTotalman());
-                setLayout("Remaining Quantity",sheetOneModel.getRemainingquantity());
-                setLayout("Total Line Output",sheetOneModel.getTotallineoutput());
-                setLayout("Date", sheetOneModel.getDate());
-                setLayout("No of Runs Days", sheetOneModel.getRundays());
+                if(sheetOneModel!=null) {
+                    setLayout("Total Man Power", sheetOneModel.getTotalman());
+                    setLayout("Remaining Quantity", sheetOneModel.getRemainingquantity());
+                    setLayout("Total Line Output", sheetOneModel.getTotallineoutput());
+                    setLayout("Date", sheetOneModel.getDate());
+                    setLayout("No of Runs Days", sheetOneModel.getRundays());
+                    setLayout("current time ", sheetOneModel.getCurrentTime());
+
+                    TextView textView = new TextView(SheetAdmin.this);
+                    textView.setText("_________________________________________________");
+                    layout.addView(textView);
 
 
-
-                TextView textView= new TextView(SheetAdmin.this);
-                textView.setText("_________________________________________________");
-                layout.addView(textView);
-
-
-
-                ArrayList<SheetTwoModel> list = sheetOneModel.getSheetTwoArrayList();
-                for(SheetTwoModel items:list)
-                {
-                    setLayout("Time", items.getTime());
-                    setLayout("Lap",items.getLap());
-                    setLayout("Output",items.getOutput());
-                    setLayout("Target",items.getTarget());
+                    ArrayList<SheetTwoModel> list = sheetOneModel.getSheetTwoArrayList();
+                    for (SheetTwoModel items : list) {
+                        setLayout("Time", items.getTime());
+                        setLayout("Lap", items.getLap());
+                        setLayout("Output", items.getOutput());
+                        setLayout("Target", items.getTarget());
+                    }
+                    progressDialog.hide();
                 }
-                progressDialog.hide();
+                else {
+                    Toast.makeText(SheetAdmin.this, "Data is not found", Toast.LENGTH_SHORT).show();
+
+                    progressDialog.hide();
+                }
             }
 
             @Override

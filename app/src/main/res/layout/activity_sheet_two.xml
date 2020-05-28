@@ -28,7 +28,7 @@
                 android:textSize="@dimen/common_text_size" />
 
 
-            <com.example.saurabhomer.style2.customView.DailyFinishingEditText
+            <com.example.saurabhomer.style2.customView.DropDownSelectTime
                 android:layout_width="0dp"
 
                 android:layout_height="wrap_content"
