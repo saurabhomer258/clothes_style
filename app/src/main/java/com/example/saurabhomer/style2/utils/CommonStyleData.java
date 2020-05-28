@@ -59,18 +59,20 @@ public class CommonStyleData extends AppCompatActivity
 //                    this.lineEfficiency = lineEfficiency;
 //                    this.size = size;
                     StyleSheetModel styleSheetModel = dataSnapshot.getValue(StyleSheetModel.class);
-                    setLayout("Sheet Number",STYLE_NUMBER);
-                    setLayout("Buyers Name",styleSheetModel.getBuyersName());
-                    setLayout("Product detail",styleSheetModel.getProduectDetail());
-                    setLayout("Shipment Date",styleSheetModel.getShipmentDate());
-                    setLayout("total Quality ",styleSheetModel.getTotalQuality());
-                    setLayout("sum ",styleSheetModel.getSum());
-                    setLayout("Line Efficiency ",styleSheetModel.getLineEfficiency());
-                    setLayout("size ",styleSheetModel.getSize());
+                    if(styleSheetModel!=null) {
+                        setLayout("Sheet Number", STYLE_NUMBER);
+                        setLayout("Buyers Name", styleSheetModel.getBuyersName());
+                        setLayout("Product detail", styleSheetModel.getProduectDetail());
+                        setLayout("Shipment Date", styleSheetModel.getShipmentDate());
+                        setLayout("total Quality ", styleSheetModel.getTotalQuality());
+                        setLayout("sam ", styleSheetModel.getSum());
+                        setLayout("Line Efficiency ", styleSheetModel.getLineEfficiency());
+                        setLayout("size ", styleSheetModel.getSize());
 
-
+                    }
 //                    setLayout("color",styleSheetModel.getColor());
 //                    setLayout("size",styleSheetModel.getSize());
+
 
                     progressDialog.hide();
                 }

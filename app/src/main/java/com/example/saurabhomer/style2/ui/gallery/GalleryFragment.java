@@ -73,7 +73,7 @@ public class GalleryFragment extends Fragment implements
         productName = root.findViewById(R.id.edt_product_name).findViewById(R.id.atvCommon);
         buyerName = root.findViewById(R.id.edt_buyer_name).findViewById(R.id.atvCommon);
         productDes = root.findViewById(R.id.edt_product_description).findViewById(R.id.atvCommon);
-        line_effi = root.findViewById(R.id.edt_line_effi).findViewById(R.id.atvCommon);
+        //line_effi = root.findViewById(R.id.edt_line_effi).findViewById(R.id.atvCommon);
         line_nu = root.findViewById(R.id.edt_line_nu).findViewById(R.id.atvCommon);
         orderNumber = root.findViewById(R.id.edt_order_quality).findViewById(R.id.atvCommon);
         sum = root.findViewById(R.id.edt_sum).findViewById(R.id.atvCommon);

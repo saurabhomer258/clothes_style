@@ -45,6 +45,7 @@ public class SheetAdmin extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot)
             {
                 SheetOneModel sheetOneModel = dataSnapshot.getValue(SheetOneModel.class);
+
                 if(sheetOneModel!=null) {
                     setLayout("Total Man Power", sheetOneModel.getTotalman());
                     setLayout("Remaining Quantity", sheetOneModel.getRemainingquantity());
@@ -72,6 +73,7 @@ public class SheetAdmin extends AppCompatActivity {
 
                     progressDialog.hide();
                 }
+
             }
 
             @Override

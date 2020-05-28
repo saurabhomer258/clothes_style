@@ -11,6 +11,7 @@ import android.view.View;
 import com.example.saurabhomer.style2.R;
 
 import com.example.saurabhomer.style2.Sheet1.SheetOne;
+import com.example.saurabhomer.style2.Sheet1.SheetTwo;
 import com.example.saurabhomer.style2.Sheet1.admin.SheetAdmin;
 import com.example.saurabhomer.style2.pref.LoginPref;
 import com.example.saurabhomer.style2.utils.CommonDailyDateFilter;
@@ -20,7 +21,8 @@ public class CardMenuP extends AppCompatActivity
     private ProgressDialog progressDialog;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_card_menu_p);
         CardView style = findViewById(R.id.cardview_style);
@@ -48,7 +50,7 @@ public class CardMenuP extends AppCompatActivity
                     startActivity(i);
                 }
                 else {
-                    Intent i = new Intent(CardMenuP.this, SheetOne.class);
+                    Intent i = new Intent(CardMenuP.this, SheetTwo.class);
                     startActivity(i);
                 }
                 progressDialog.hide();
