@@ -12,7 +12,6 @@
         <activity android:name=".Sheet1.ResultActivity"></activity>
         <activity android:name=".Sheet1.admin.SheetAdmin" />
         <activity android:name=".Sheet1.SheetTwo" />
-        <activity android:name=".Sheet1.SheetOne" />
         <activity android:name=".InlinePrelineFinal.ResultViewForActivity" />
         <activity android:name=".admin.InlineFinalPreLineAdmin" />
         <activity android:name=".InlinePrelineFinal.InlinePrelineFinal3" />

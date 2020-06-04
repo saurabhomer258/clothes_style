@@ -27,6 +27,7 @@ public class HomeFragment extends Fragment {
     private HomeViewModel homeViewModel;
     public static String STYLE_NUMBER;
     public static String date_in_globler;
+    public static String total_order_qu;
     private Button submitBtn;
     private ProgressDialog progressDialog;
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -61,6 +62,7 @@ public class HomeFragment extends Fragment {
                             if( styleSheetModel != null && styleSheetModel.getShipmentDate() !=null){
 
                                 date_in_globler = styleSheetModel.getShipmentDate();
+                                total_order_qu = styleSheetModel.getTotalQuality();
                             }
                             else {
                                 date_in_globler  = "";

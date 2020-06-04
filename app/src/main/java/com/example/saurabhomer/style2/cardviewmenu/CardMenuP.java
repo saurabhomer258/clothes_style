@@ -10,19 +10,23 @@ import android.view.View;
 
 import com.example.saurabhomer.style2.R;
 
-import com.example.saurabhomer.style2.Sheet1.SheetOne;
 import com.example.saurabhomer.style2.Sheet1.SheetTwo;
 import com.example.saurabhomer.style2.Sheet1.admin.SheetAdmin;
+import com.example.saurabhomer.style2.Sheet1.sheetmodel.SheetOneModel;
+import com.example.saurabhomer.style2.Sheet1.sheetmodel.SheetTwoModel;
 import com.example.saurabhomer.style2.pref.LoginPref;
-import com.example.saurabhomer.style2.utils.CommonDailyDateFilter;
+
+import java.util.ArrayList;
 
 public class CardMenuP extends AppCompatActivity
 {
     private ProgressDialog progressDialog;
-
+    public static SheetOneModel sheetOneModel = new SheetOneModel();
+   public static ArrayList<SheetTwoModel> sheetTwoModels = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
+        sheetTwoModels = new ArrayList<>();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_card_menu_p);
         CardView style = findViewById(R.id.cardview_style);
@@ -45,11 +49,13 @@ public class CardMenuP extends AppCompatActivity
         style.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                sheetTwoModels = new ArrayList<>();
                 if (LoginPref.getInstance(getApplicationContext()).getAdmin().equals(1 + "")) {
                     Intent i =  new Intent(CardMenuP.this, SheetAdmin.class);
                     startActivity(i);
                 }
                 else {
+
                     Intent i = new Intent(CardMenuP.this, SheetTwo.class);
                     startActivity(i);
                 }

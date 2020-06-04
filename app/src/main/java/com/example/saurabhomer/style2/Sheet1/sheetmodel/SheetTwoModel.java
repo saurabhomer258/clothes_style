@@ -21,6 +21,10 @@ public class SheetTwoModel {
         this.target = target;
     }
 
+    public void setLap(String lap) {
+        this.lap = lap;
+    }
+
     public String getOutput() {
         return output;
     }
@@ -33,7 +37,5 @@ public class SheetTwoModel {
         return lap;
     }
 
-    public void setLap(String lap) {
-        this.lap = lap;
-    }
+
 }

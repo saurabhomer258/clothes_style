@@ -13,7 +13,8 @@ import com.example.saurabhomer.style2.R;
 import com.example.saurabhomer.style2.Sheet1.sheetmodel.SheetTwoModel;
 import com.example.saurabhomer.style2.cardviewmenu.CardMenuP;
 
-import static com.example.saurabhomer.style2.Sheet1.SheetOne.sheetOneModel;
+
+import static com.example.saurabhomer.style2.cardviewmenu.CardMenuP.sheetOneModel;
 
 public class ResultActivity extends AppCompatActivity {
 
@@ -25,14 +26,14 @@ public class ResultActivity extends AppCompatActivity {
         Button ok = (Button) findViewById(R.id.btn_ok);
         layout = findViewById(R.id.dailyLayout);
 
-        setLayout("Total Man Power ", sheetOneModel.getTotalman());
+        //setLayout("Total Man Power ", sheetOneModel.getTotalman());
         setLayout("Remaining Quantity ", sheetOneModel.getRemainingquantity());
         setLayout("Total Line Output ", sheetOneModel.getTotallineoutput());
         setLayout("Date", sheetOneModel.getDate());
         setLayout("No. Of Runs Days", sheetOneModel.getRundays());
 
         int sum = 0,sum2 =0;
-        for (SheetTwoModel items : SheetOne.sheetTwoModels) {
+        for (SheetTwoModel items : sheetOneModel.getSheetTwoArrayList()) {
             setLayout();
             setLayout("Time",items.getTime());
             setLayout("Lap",items.getLap());
@@ -60,6 +61,7 @@ public class ResultActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(ResultActivity.this, CardMenuP.class);
                 startActivity(intent);
+                finish();
             }
         });
 

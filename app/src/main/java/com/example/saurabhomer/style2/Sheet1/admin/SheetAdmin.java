@@ -47,13 +47,12 @@ public class SheetAdmin extends AppCompatActivity {
                 SheetOneModel sheetOneModel = dataSnapshot.getValue(SheetOneModel.class);
 
                 if(sheetOneModel!=null) {
-                    setLayout("Total Man Power", sheetOneModel.getTotalman());
+                   // setLayout("Total Man Power", sheetOneModel.getTotalman());
                     setLayout("Remaining Quantity", sheetOneModel.getRemainingquantity());
                     setLayout("Total Line Output", sheetOneModel.getTotallineoutput());
                     setLayout("Date", sheetOneModel.getDate());
                     setLayout("No of Runs Days", sheetOneModel.getRundays());
-                    setLayout("current time ", sheetOneModel.getCurrentTime());
-
+                  //  setLayout("current time ", sheetOneModel.getCurrentTime());
                     TextView textView = new TextView(SheetAdmin.this);
                     textView.setText("_________________________________________________");
                     layout.addView(textView);
@@ -65,7 +64,10 @@ public class SheetAdmin extends AppCompatActivity {
                         setLayout("Lap", items.getLap());
                         setLayout("Output", items.getOutput());
                         setLayout("Target", items.getTarget());
+                        setLayout();
+                        setLayout();
                     }
+
                     progressDialog.hide();
                 }
                 else {
@@ -92,5 +94,15 @@ public class SheetAdmin extends AppCompatActivity {
             textView.setText(object, result);
             layout.addView(textView);
         }
+    }
+
+    private void setLayout(){
+
+            AdminResult textView = new AdminResult(SheetAdmin.this);
+            String res = "";
+
+            textView.setText();
+            layout.addView(textView);
+
     }
 }

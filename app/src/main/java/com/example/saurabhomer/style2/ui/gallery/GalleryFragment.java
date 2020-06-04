@@ -134,7 +134,7 @@ public class GalleryFragment extends Fragment implements
                                                                                            tDate = txtDate.getText().toString(),
                                                                                            sum.getText().toString(),
                                                                                            line_nu.getText().toString(),
-                                                                                           line_effi.getText().toString(),
+
                                                                                            size.getText().toString()
                                                                                           );
                                                                                    //    ));

@@ -6,8 +6,10 @@ import java.util.ArrayList;
 
 public class SheetOneModel {
 
-    private String totalman,remainingquantity,totallineoutput,rundays,date,currentTime;
+    private String totalman=" ",remainingquantity="",totallineoutput="",rundays="",date="",currentTime="";
     private ArrayList<SheetTwoModel> sheetTwoArrayList;
+
+
 
 
     public String getTotalman() {

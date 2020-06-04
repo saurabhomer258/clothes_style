@@ -9,7 +9,7 @@ public class StyleSheetModel {
     private String ShipmentDate;
     private String sum;
 
-    public StyleSheetModel(String sheetNumber, String buyersName, String produectDetail, String description, String totalQuality, String shipmentDate, String sum, String lineNumber, String lineEfficiency, String size) {
+    public StyleSheetModel(String sheetNumber, String buyersName, String produectDetail, String description, String totalQuality, String shipmentDate, String sum, String lineNumber, String size) {
         this.sheetNumber = sheetNumber;
         BuyersName = buyersName;
         ProduectDetail = produectDetail;
@@ -18,7 +18,7 @@ public class StyleSheetModel {
         ShipmentDate = shipmentDate;
         this.sum = sum;
         this.lineNumber = lineNumber;
-        this.lineEfficiency = lineEfficiency;
+
         this.size = size;
     }
 
