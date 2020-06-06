@@ -164,6 +164,14 @@ public class SheetModifyAdmin extends AppCompatActivity {
                     setLayout("Output",sheetModifyModel.getOutput12());
                     setLayout("Target",sheetModifyModel.getTarget12());
 
+                    TextView textView12= new TextView(SheetModifyAdmin.this);
+                    textView11.setText("_________________________________________________");
+                    layout.addView(textView12);
+
+                    setLayout("Total Output",sheetModifyModel.getTotalOutput());
+                    setLayout("Total Target",sheetModifyModel.getTotaltarget());
+
+
                     progressDialog.hide();
                 }
                 else {
