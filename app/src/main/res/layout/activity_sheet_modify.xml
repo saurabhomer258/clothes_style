@@ -57,12 +57,14 @@
             <EditText
                 android:id="@+id/output1"
                 android:inputType="number"
+                android:text="0"
                 android:layout_height="wrap_content"
                 />
 
             <EditText
                 android:id="@+id/target1"
                 android:inputType="number"
+                android:text="0"
                 android:layout_height="wrap_content"
                 />
         </TableRow>
@@ -81,12 +83,14 @@
             <EditText
                 android:id="@+id/output2"
                 android:inputType="number"
+                android:text="0"
                 android:layout_height="wrap_content"
                 />
 
             <EditText
                 android:id="@+id/target2"
                 android:inputType="number"
+                android:text="0"
                 android:layout_height="wrap_content"
                 />
         </TableRow>
@@ -105,12 +109,14 @@
             <EditText
                 android:id="@+id/output3"
                 android:inputType="number"
+                android:text="0"
                 android:layout_height="wrap_content"
                 />
 
             <EditText
                 android:id="@+id/target3"
                 android:inputType="number"
+                android:text="0"
                 android:layout_height="wrap_content"
                 />
         </TableRow>
@@ -129,12 +135,14 @@
             <EditText
                 android:id="@+id/output4"
                 android:inputType="number"
+                android:text="0"
                 android:layout_height="wrap_content"
                 />
 
             <EditText
                 android:id="@+id/target4"
                 android:inputType="number"
+                android:text="0"
                 android:layout_height="wrap_content"
                 />
     </TableRow>
@@ -152,12 +160,14 @@
             <EditText
                 android:id="@+id/output5"
                 android:inputType="number"
+                android:text="0"
                 android:layout_height="wrap_content"
                 />
 
             <EditText
                 android:id="@+id/target5"
                 android:inputType="number"
+                android:text="0"
                 android:layout_height="wrap_content"
                 />
         </TableRow>
@@ -176,12 +186,14 @@
             <EditText
                 android:id="@+id/output6"
                 android:inputType="number"
+                android:text="0"
                 android:layout_height="wrap_content"
                 />
 
             <EditText
                 android:id="@+id/target6"
                 android:inputType="number"
+                android:text="0"
                 android:layout_height="wrap_content"
                 />
         </TableRow>
@@ -200,12 +212,14 @@
             <EditText
                 android:id="@+id/output7"
                 android:inputType="number"
+                android:text="0"
                 android:layout_height="wrap_content"
                 />
 
             <EditText
                 android:id="@+id/target7"
                 android:inputType="number"
+                android:text="0"
                 android:layout_height="wrap_content"
                 />
         </TableRow>
@@ -224,12 +238,14 @@
         <EditText
             android:id="@+id/output8"
             android:inputType="number"
+            android:text="0"
             android:layout_height="wrap_content"
             />
 
         <EditText
             android:id="@+id/target8"
             android:inputType="number"
+            android:text="0"
             android:layout_height="wrap_content"
             />
         </TableRow>
@@ -247,12 +263,14 @@
             <EditText
                 android:id="@+id/output9"
                 android:inputType="number"
+                android:text="0"
                 android:layout_height="wrap_content"
                 />
 
             <EditText
                 android:id="@+id/target9"
                 android:inputType="number"
+                android:text="0"
                 android:layout_height="wrap_content"
                 />
         </TableRow>
@@ -270,12 +288,14 @@
             <EditText
                 android:id="@+id/output10"
                 android:inputType="number"
+                android:text="0"
                 android:layout_height="wrap_content"
                 />
 
             <EditText
                 android:id="@+id/target10"
                 android:inputType="number"
+                android:text="0"
                 android:layout_height="wrap_content"
                 />
         </TableRow>
@@ -294,12 +314,14 @@
             <EditText
                 android:id="@+id/output11"
                 android:inputType="number"
+                android:text="0"
                 android:layout_height="wrap_content"
                 />
 
             <EditText
                 android:id="@+id/target11"
                 android:inputType="number"
+                android:text="0"
                 android:layout_height="wrap_content"
                 />
         </TableRow>
@@ -318,12 +340,14 @@
             <EditText
                 android:id="@+id/output12"
                 android:inputType="number"
+                android:text="0"
                 android:layout_height="wrap_content"
                 />
 
             <EditText
                 android:id="@+id/target12"
                 android:inputType="number"
+                android:text="0"
                 android:layout_height="wrap_content"
                 />
         </TableRow>

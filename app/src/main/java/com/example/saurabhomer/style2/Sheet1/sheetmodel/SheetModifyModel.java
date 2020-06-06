@@ -6,6 +6,23 @@ public class SheetModifyModel {
     String lap1,lap2,lap3,lap4,lap5,lap6,lap7,lap8,lap9,lap10,lap11,lap12;
     String output1,output2,output3,output4,output5,output6,output7,output8,output9,output10,output11,output12;
     String target1,target2,target3,target4,target5,target6,target7,target8,target9,target10,target11,target12;
+    String totalOutput,totaltarget;
+
+    public String getTotalOutput() {
+        return totalOutput;
+    }
+
+    public void setTotalOutput(String totalOutput) {
+        this.totalOutput = totalOutput;
+    }
+
+    public String getTotaltarget() {
+        return totaltarget;
+    }
+
+    public void setTotaltarget(String totaltarget) {
+        this.totaltarget = totaltarget;
+    }
 
     public String getTime1() {
         return time1;

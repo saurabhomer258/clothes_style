@@ -90,6 +90,7 @@ public class SheetModify extends AppCompatActivity {
         target11 = (EditText) findViewById(R.id.target11);
         target12 = (EditText) findViewById(R.id.target12);
 
+
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -103,7 +104,27 @@ public class SheetModify extends AppCompatActivity {
                 progressDialog.setMessage("Verificating...");
                 progressDialog.show();
 
+                int outputsum =0;
+                int targetsum =0;
+
                 SheetModifyModel sheetModifyModel = new SheetModifyModel();
+//                outputsum = outputsum+Integer.parseInt(sheetModifyModel.getOutput1())+Integer.parseInt(sheetModifyModel.getOutput2())
+//                        +Integer.parseInt(sheetModifyModel.getOutput3())+Integer.parseInt(sheetModifyModel.getOutput4())
+//                        +Integer.parseInt(sheetModifyModel.getOutput5())+Integer.parseInt(sheetModifyModel.getOutput6())
+//                        +Integer.parseInt(sheetModifyModel.getOutput7())+Integer.parseInt(sheetModifyModel.getOutput8())
+//                        +Integer.parseInt(sheetModifyModel.getOutput9())+Integer.parseInt(sheetModifyModel.getOutput10())
+//                        +Integer.parseInt(sheetModifyModel.getOutput11())+Integer.parseInt(sheetModifyModel.getOutput12());
+//
+//                targetsum = targetsum + Integer.parseInt(sheetModifyModel.getTarget1())+Integer.parseInt(sheetModifyModel.getTarget2())
+//                        +Integer.parseInt(sheetModifyModel.getTarget3())+Integer.parseInt(sheetModifyModel.getTarget4())
+//                        +Integer.parseInt(sheetModifyModel.getTarget5())+Integer.parseInt(sheetModifyModel.getTarget6())
+//                        +Integer.parseInt(sheetModifyModel.getTarget7())+Integer.parseInt(sheetModifyModel.getTarget8())
+//                        +Integer.parseInt(sheetModifyModel.getTarget9())+Integer.parseInt(sheetModifyModel.getTarget10())
+//                        +Integer.parseInt(sheetModifyModel.getTarget11())+Integer.parseInt(sheetModifyModel.getTarget12());
+
+
+
+
                 sheetModifyModel.setTime1(time1.getText().toString());
                 sheetModifyModel.setTime2(time2.getText().toString());
                 sheetModifyModel.setTime3(time3.getText().toString());
@@ -152,6 +173,18 @@ public class SheetModify extends AppCompatActivity {
                 sheetModifyModel.setTarget10(target10.getText().toString());
                 sheetModifyModel.setTarget11(target11.getText().toString());
                 sheetModifyModel.setTarget12(target12.getText().toString());
+
+
+                outputsum = outputsum +Integer.parseInt(sheetModifyModel.getOutput1())+Integer.parseInt(sheetModifyModel.getOutput2())+Integer.parseInt(sheetModifyModel.getOutput3())+Integer.parseInt(sheetModifyModel.getOutput4())+Integer.parseInt(sheetModifyModel.getOutput5())+Integer.parseInt(sheetModifyModel.getOutput6())
+                +Integer.parseInt(sheetModifyModel.getOutput7())+Integer.parseInt(sheetModifyModel.getOutput8())+Integer.parseInt(sheetModifyModel.getOutput9())+Integer.parseInt(sheetModifyModel.getOutput10())+Integer.parseInt(sheetModifyModel.getOutput11())+Integer.parseInt(sheetModifyModel.getOutput12());
+
+                targetsum = targetsum + Integer.parseInt(sheetModifyModel.getTarget1())+Integer.parseInt(sheetModifyModel.getTarget2())+Integer.parseInt(sheetModifyModel.getTarget3())+Integer.parseInt(sheetModifyModel.getTarget4())+Integer.parseInt(sheetModifyModel.getTarget5())+Integer.parseInt(sheetModifyModel.getTarget6())+Integer.parseInt(sheetModifyModel.getTarget7())+Integer.parseInt(sheetModifyModel.getTarget8())+Integer.parseInt(sheetModifyModel.getTarget9())
+                +Integer.parseInt(sheetModifyModel.getTarget10())+Integer.parseInt(sheetModifyModel.getTarget11())+Integer.parseInt(sheetModifyModel.getTarget12());
+
+                sheetModifyModel.setTotalOutput(Integer.toString(outputsum));
+                sheetModifyModel.setTotaltarget(Integer.toString(targetsum));
+                Toast.makeText(SheetModify.this, ""+outputsum+""+targetsum, Toast.LENGTH_SHORT).show();
+
                 FirebaseDatabase.getInstance().getReference("sheetmodify").child(STYLE_NUMBER).setValue(sheetModifyModel).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
