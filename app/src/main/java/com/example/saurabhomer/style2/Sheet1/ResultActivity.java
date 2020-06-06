@@ -82,8 +82,6 @@ public class ResultActivity extends AppCompatActivity {
     private void setLayout() {
 
         TextView textView = new TextView(ResultActivity.this);
-
-
         textView.setText("______________________");
         layout.addView(textView);
 

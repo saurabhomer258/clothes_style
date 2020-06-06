@@ -191,7 +191,6 @@ public class SheetTwo extends AppCompatActivity {
 
             //Convert long to String
 
-
             return differenceDates + "";
         }
         catch (Exception e) {

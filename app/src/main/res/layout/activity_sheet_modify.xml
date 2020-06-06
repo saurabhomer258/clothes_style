@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".Sheet1.SheetModify">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id = "@+id/RHE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:padding="5dp">
+
+        <TableRow android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/time"
+                android:text="Time"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:layout_width="100dp"
+                android:id="@+id/lap"
+                android:text="Lap"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/output"
+                android:layout_width="100dp"
+                android:text="Output"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/target"
+                android:text="Target"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+
+        <TableRow android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/time1"
+                android:text="8.15 - 9.05"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:id="@+id/lap1"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/output1"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:id="@+id/target1"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+
+        <TableRow android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/time2"
+                android:text="9.05 - 9.55"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/lap2"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/output2"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:id="@+id/target2"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+
+        <TableRow android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/time3"
+                android:text="9.55 - 10.45"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/lap3"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/output3"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:id="@+id/target3"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+
+        <TableRow android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/time4"
+            android:text="10.45 - 11.35"
+            android:layout_height="wrap_content"
+            />
+            <EditText
+                android:id="@+id/lap4"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/output4"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:id="@+id/target4"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+    </TableRow>
+        <TableRow android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/time5"
+                android:text="11.35 - 12.25"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/lap5"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/output5"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:id="@+id/target5"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+
+        <TableRow android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/time6"
+                android:text="12.25 - 1.15"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/lap6"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/output6"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:id="@+id/target6"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+
+        <TableRow android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/time7"
+                android:text="2.00 - 2.50"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/lap7"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/output7"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:id="@+id/target7"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+
+        <TableRow android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/time8"
+                android:text="2.50 - 3.40"
+                android:layout_height="wrap_content"
+                />
+        <EditText
+            android:id="@+id/lap8"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            />
+        <EditText
+            android:id="@+id/output8"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:id="@+id/target8"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            />
+        </TableRow>
+        <TableRow android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/time9"
+                android:text="3.40 - 4.30"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/lap9"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/output9"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:id="@+id/target9"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+        <TableRow android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/time10"
+                android:text="4.30 - 5.20"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/lap10"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/output10"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:id="@+id/target10"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+
+        <TableRow android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/time11"
+                android:text="5.20 - 6.10"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/lap11"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/output11"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:id="@+id/target11"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+
+        <TableRow android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/time12"
+                android:text="6.10 - 7.00"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/lap12"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/output12"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:id="@+id/target12"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <com.example.saurabhomer.style2.customView.NextButton
+                android:id="@+id/btn_next"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:padding="5dp" />
+
+            <com.example.saurabhomer.style2.customView.DoneButton
+                android:id="@+id/btn_done"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:padding="5dp" />
+        </LinearLayout>
+    </TableLayout>
+</LinearLayout>
