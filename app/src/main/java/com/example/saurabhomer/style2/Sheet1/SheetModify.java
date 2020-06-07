@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 import com.example.saurabhomer.style2.R;
 import com.example.saurabhomer.style2.Sheet1.sheetmodel.SheetModifyModel;
+import com.example.saurabhomer.style2.utils.CommonStyleData;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.FirebaseDatabase;
@@ -35,10 +36,10 @@ public class SheetModify extends AppCompatActivity {
 
     private ProgressDialog progressDialog;
     TextView time1,time2,time3,time4,time5,time6,time7,time8,time9,time10,time11,time12;
-    EditText lap1,lap2,lap3,lap4,lap5,lap6,lap7,lap8,lap9,lap10,lap11,lap12;
+    TextView lap1,lap2,lap3,lap4,lap5,lap6,lap7,lap8,lap9,lap10,lap11,lap12;
     EditText output1,output2,output3,output4,output5,output6,output7,output8,output9,output10,output11,output12;
     EditText target1,target2,target3,target4,target5,target6,target7,target8,target9,target10,target11,target12;
-
+    Button info_btn;
 
     EditText totoutput,tottarget;
     @Override
@@ -53,6 +54,8 @@ public class SheetModify extends AppCompatActivity {
         totoutput = (EditText)findViewById(R.id.to);
         tottarget =(EditText)findViewById(R.id.tt);
 
+        info_btn = (Button) findViewById(R.id.info_daily);
+
         time1 = (TextView)findViewById(R.id.time1);
         time2 = (TextView)findViewById(R.id.time2);
         time3 = (TextView)findViewById(R.id.time3);
@@ -66,18 +69,18 @@ public class SheetModify extends AppCompatActivity {
         time11 = (TextView)findViewById(R.id.time11);
         time12 = (TextView)findViewById(R.id.time12);
 
-        lap1 = (EditText)findViewById(R.id.lap1);
-        lap2 = (EditText)findViewById(R.id.lap2);
-        lap3 = (EditText)findViewById(R.id.lap3);
-        lap4 = (EditText)findViewById(R.id.lap4);
-        lap5 = (EditText)findViewById(R.id.lap5);
-        lap6 = (EditText)findViewById(R.id.lap6);
-        lap7 = (EditText)findViewById(R.id.lap7);
-        lap8 = (EditText)findViewById(R.id.lap8);
-        lap9= (EditText)findViewById(R.id.lap9);
-        lap10 = (EditText)findViewById(R.id.lap10);
-        lap11 = (EditText)findViewById(R.id.lap11);
-        lap12 = (EditText)findViewById(R.id.lap12);
+        lap1 = (TextView) findViewById(R.id.lap1);
+        lap2 = (TextView)findViewById(R.id.lap2);
+        lap3 = (TextView)findViewById(R.id.lap3);
+        lap4 = (TextView)findViewById(R.id.lap4);
+        lap5 = (TextView)findViewById(R.id.lap5);
+        lap6 = (TextView)findViewById(R.id.lap6);
+        lap7 = (TextView)findViewById(R.id.lap7);
+        lap8 = (TextView)findViewById(R.id.lap8);
+        lap9= (TextView)findViewById(R.id.lap9);
+        lap10 = (TextView)findViewById(R.id.lap10);
+        lap11 = (TextView)findViewById(R.id.lap11);
+        lap12 = (TextView)findViewById(R.id.lap12);
 
         output1 = (EditText)findViewById(R.id.output1);
         output2 = (EditText)findViewById(R.id.output2);
@@ -104,6 +107,14 @@ public class SheetModify extends AppCompatActivity {
         target10 = (EditText) findViewById(R.id.target10);
         target11 = (EditText) findViewById(R.id.target11);
         target12 = (EditText) findViewById(R.id.target12);
+
+        info_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SheetModify.this, CommonStyleData.class);
+                startActivity(intent);
+            }
+        });
 
 
         next.setOnClickListener(new View.OnClickListener() {

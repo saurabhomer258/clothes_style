@@ -75,11 +75,12 @@ public class GalleryFragment extends Fragment implements
         productName = root.findViewById(R.id.edt_product_name).findViewById(R.id.atvCommon);
         buyerName = root.findViewById(R.id.edt_buyer_name).findViewById(R.id.atvCommon);
         productDes = root.findViewById(R.id.edt_product_description).findViewById(R.id.atvCommon);
-        //line_effi = root.findViewById(R.id.edt_line_effi).findViewById(R.id.atvCommon);
+        line_effi = root.findViewById(R.id.edt_lineefficency).findViewById(R.id.atvCommon);
         line_nu = root.findViewById(R.id.edt_line_nu).findViewById(R.id.spinner);
         total_man_power = root.findViewById(R.id.edt_total_man_power).findViewById(R.id.atvCommon);
         orderNumber = root.findViewById(R.id.edt_order_quality).findViewById(R.id.atvCommon);
         sum = root.findViewById(R.id.edt_sum).findViewById(R.id.atvCommon);
+
        // shipDate = root.findViewById(R.id.edt_shipment_date).findViewById(R.id.atvCommon);
 
         size = root.findViewById(R.id.edt_Size).findViewById(R.id.atvCommon);
@@ -137,9 +138,9 @@ public class GalleryFragment extends Fragment implements
                                                                                            tDate = txtDate.getText().toString(),
                                                                                            sum.getText().toString(),
                                                                                            line_nu.getSelectedItem().toString(),
-
                                                                                            size.getText().toString(),
-                                                                                           total_man_power.getText().toString()
+                                                                                           total_man_power.getText().toString(),
+                                                                                           line_effi.getText().toString()
                                                                                           );
                                                                                    //    ));
 
