@@ -67,6 +67,7 @@ public class CommonStyleData extends AppCompatActivity
                         setLayout("Total order quality ", styleSheetModel.getTotalQuality());
                         setLayout("sam ", styleSheetModel.getSum());
                         setLayout("size ", styleSheetModel.getSize());
+                        setLayout("Total Man power ", styleSheetModel.getTotalManPower());
 
                     }
 //                    setLayout("color",styleSheetModel.getColor());
