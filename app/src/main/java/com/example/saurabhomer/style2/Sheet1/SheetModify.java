@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 import com.example.saurabhomer.style2.R;
 import com.example.saurabhomer.style2.Sheet1.sheetmodel.SheetModifyModel;
+import com.example.saurabhomer.style2.utils.CommonStyleData;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.FirebaseDatabase;
@@ -41,6 +42,7 @@ public class SheetModify extends AppCompatActivity {
 
 
     EditText totoutput,tottarget;
+    Button info_btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,6 +54,8 @@ public class SheetModify extends AppCompatActivity {
         Button done =findViewById(R.id.btn_done).findViewById(R.id.btnNext);
         totoutput = (EditText)findViewById(R.id.to);
         tottarget =(EditText)findViewById(R.id.tt);
+
+        info_btn = (Button) findViewById(R.id.info_daily);
 
         time1 = (TextView)findViewById(R.id.time1);
         time2 = (TextView)findViewById(R.id.time2);
@@ -104,6 +108,13 @@ public class SheetModify extends AppCompatActivity {
         target10 = (EditText) findViewById(R.id.target10);
         target11 = (EditText) findViewById(R.id.target11);
         target12 = (EditText) findViewById(R.id.target12);
+        info_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SheetModify.this, CommonStyleData.class);
+                startActivity(intent);
+            }
+        });
 
 
         next.setOnClickListener(new View.OnClickListener() {

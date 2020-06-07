@@ -8,8 +8,10 @@ public class StyleSheetModel {
     private String totalQuality;
     private String ShipmentDate;
     private String sum;
+    private String totalmanpower;
 
-    public StyleSheetModel(String sheetNumber, String buyersName, String produectDetail, String description, String totalQuality, String shipmentDate, String sum, String lineNumber, String size) {
+
+    public StyleSheetModel(String sheetNumber, String buyersName, String produectDetail, String description, String totalQuality, String shipmentDate, String sum, String lineNumber, String size, String totalmanpower) {
         this.sheetNumber = sheetNumber;
         BuyersName = buyersName;
         ProduectDetail = produectDetail;
@@ -18,11 +20,19 @@ public class StyleSheetModel {
         ShipmentDate = shipmentDate;
         this.sum = sum;
         this.lineNumber = lineNumber;
-
+        this.totalmanpower = totalmanpower;
         this.size = size;
     }
 
     public StyleSheetModel() {
+    }
+
+    public String getTotalmanpower() {
+        return totalmanpower;
+    }
+
+    public void setTotalmanpower(String totalmanpower) {
+        this.totalmanpower = totalmanpower;
     }
 
     private String lineNumber;

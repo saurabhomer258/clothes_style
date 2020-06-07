@@ -44,6 +44,7 @@ public class GalleryFragment extends Fragment implements
     AutoCompleteTextView productDes;
     AutoCompleteTextView line_effi;
     AutoCompleteTextView sum;
+    AutoCompleteTextView totalmanpower;
     AutoCompleteTextView orderNumber;
     AutoCompleteTextView line_nu;
     AutoCompleteTextView shipDate;
@@ -77,6 +78,7 @@ public class GalleryFragment extends Fragment implements
         line_nu = root.findViewById(R.id.edt_line_nu).findViewById(R.id.atvCommon);
         orderNumber = root.findViewById(R.id.edt_order_quality).findViewById(R.id.atvCommon);
         sum = root.findViewById(R.id.edt_sum).findViewById(R.id.atvCommon);
+        totalmanpower = root.findViewById(R.id.edt_manpower).findViewById(R.id.atvCommon);
        // shipDate = root.findViewById(R.id.edt_shipment_date).findViewById(R.id.atvCommon);
 
         size = root.findViewById(R.id.edt_Size).findViewById(R.id.atvCommon);
@@ -134,8 +136,8 @@ public class GalleryFragment extends Fragment implements
                                                                                            tDate = txtDate.getText().toString(),
                                                                                            sum.getText().toString(),
                                                                                            line_nu.getText().toString(),
-
-                                                                                           size.getText().toString()
+                                                                                           size.getText().toString(),
+                                                                                           totalmanpower.getText().toString()
                                                                                           );
                                                                                    //    ));
 
