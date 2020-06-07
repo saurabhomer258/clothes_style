@@ -7,6 +7,39 @@ public class SheetModifyModel {
     String output1,output2,output3,output4,output5,output6,output7,output8,output9,output10,output11,output12;
     String target1,target2,target3,target4,target5,target6,target7,target8,target9,target10,target11,target12;
     String totalOutput,totaltarget;
+    String remainingquantity, date,totallineoutput,rundays;
+
+    public String getRemainingquantity() {
+        return remainingquantity;
+    }
+
+    public void setRemainingquantity(String remainingquantity) {
+        this.remainingquantity = remainingquantity;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getTotallineoutput() {
+        return totallineoutput;
+    }
+
+    public void setTotallineoutput(String totallineoutput) {
+        this.totallineoutput = totallineoutput;
+    }
+
+    public String getRundays() {
+        return rundays;
+    }
+
+    public void setRundays(String rundays) {
+        this.rundays = rundays;
+    }
 
     public String getTotalOutput() {
         return totalOutput;

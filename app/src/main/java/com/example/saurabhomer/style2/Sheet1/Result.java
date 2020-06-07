@@ -56,7 +56,7 @@ public class Result extends AppCompatActivity {
         ok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Result.this, CardMenuP.class);
+                Intent intent = new Intent(Result.this, SheetModify.class);
                 startActivity(intent);
                 finish();
             }

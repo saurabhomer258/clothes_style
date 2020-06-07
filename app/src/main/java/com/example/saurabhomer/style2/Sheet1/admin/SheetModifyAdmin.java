@@ -8,6 +8,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.saurabhomer.style2.R;
+import com.example.saurabhomer.style2.Sheet1.ResultActivity;
 import com.example.saurabhomer.style2.Sheet1.sheetmodel.SheetModifyModel;
 import com.example.saurabhomer.style2.Sheet1.sheetmodel.SheetOneModel;
 import com.example.saurabhomer.style2.Sheet1.sheetmodel.SheetTwoModel;
@@ -47,6 +48,16 @@ public class SheetModifyAdmin extends AppCompatActivity {
                 SheetModifyModel sheetModifyModel = dataSnapshot.getValue(SheetModifyModel.class);
 
                 if(sheetModifyModel!=null) {
+                    setLayout("Remaining Quantity",sheetModifyModel.getRemainingquantity());
+                    setLayout("Total Line Output", sheetModifyModel.getTotallineoutput());
+                    setLayout("Date",sheetModifyModel.getDate());
+                    setLayout("No. Of Run Days", sheetModifyModel.getRundays());
+
+                    TextView textVie= new TextView(SheetModifyAdmin.this);
+                    textVie.setText("_________________________________________________");
+                    layout.addView(textVie);
+
+
                     setLayout("Time", sheetModifyModel.getTime1());
                     setLayout("Lap",sheetModifyModel.getLap1());
                     setLayout("Output",sheetModifyModel.getOutput1());

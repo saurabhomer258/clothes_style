@@ -153,6 +153,7 @@ public class SheetTwo extends AppCompatActivity {
 
 
             SimpleDateFormat df = new SimpleDateFormat("MM/dd/yyyy");
+
             String CurrentDate = df.format(c);
             if (FinalDate == null || FinalDate.isEmpty() || CurrentDate == null || CurrentDate.isEmpty())
                 return "..";

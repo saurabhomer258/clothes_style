@@ -6,7 +6,9 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     tools:context=".Sheet1.SheetModify">
-
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id = "@+id/RHE"
         android:layout_width="match_parent"
@@ -18,18 +20,21 @@
             <TextView
                 android:id="@+id/time"
                 android:text="Time"
+                android:textSize="20dp"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 />
             <TextView
                 android:layout_width="100dp"
                 android:id="@+id/lap"
+                android:textSize="20dp"
                 android:text="Lap"
                 android:layout_height="wrap_content"
                 />
             <TextView
                 android:id="@+id/output"
                 android:layout_width="100dp"
+                android:textSize="20dp"
                 android:text="Output"
                 android:layout_height="wrap_content"
                 />
@@ -37,6 +42,7 @@
             <TextView
                 android:id="@+id/target"
                 android:text="Target"
+                android:textSize="20dp"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 />
@@ -352,6 +358,32 @@
                 />
         </TableRow>
 
+        <TableRow android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/totaltarget1"
+                android:text="Total Target"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/tt"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+
+        <TableRow android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/totaloutput1"
+                android:text="Total Output"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/to"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -373,4 +405,6 @@
                 android:padding="5dp" />
         </LinearLayout>
     </TableLayout>
+    </android.support.v4.widget.NestedScrollView>
+
 </LinearLayout>
