@@ -1,18 +1,23 @@
 package com.example.saurabhomer.style2.Sheet1.admin;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.saurabhomer.style2.R;
 import com.example.saurabhomer.style2.Sheet1.ResultActivity;
+import com.example.saurabhomer.style2.Sheet1.SheetTwo;
 import com.example.saurabhomer.style2.Sheet1.sheetmodel.SheetModifyModel;
 import com.example.saurabhomer.style2.Sheet1.sheetmodel.SheetOneModel;
 import com.example.saurabhomer.style2.Sheet1.sheetmodel.SheetTwoModel;
 import com.example.saurabhomer.style2.customView.AdminResult;
+import com.example.saurabhomer.style2.utils.CommonStyleData;
 import com.example.saurabhomer.style2.utils.NetworkUtils;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -26,11 +31,13 @@ import static com.example.saurabhomer.style2.ui.home.HomeFragment.STYLE_NUMBER;
 public class SheetModifyAdmin extends AppCompatActivity {
     LinearLayout layout;
     private ProgressDialog progressDialog;
+    Button info_btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sheet_admin);
         layout = findViewById(R.id.dailyLayout);
+        info_btn = (Button) findViewById(R.id.info_daily);
 
         if (!NetworkUtils.isNetworkConnected(SheetModifyAdmin.this))
         {
@@ -196,6 +203,14 @@ public class SheetModifyAdmin extends AppCompatActivity {
             @Override
             public void onCancelled(DatabaseError databaseError) {
                 progressDialog.hide();
+            }
+        });
+
+        info_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SheetModifyAdmin.this, CommonStyleData.class);
+                startActivity(intent);
             }
         });
     }

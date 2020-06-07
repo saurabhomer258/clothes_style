@@ -64,7 +64,7 @@ public class CommonStyleData extends AppCompatActivity
                         setLayout("Buyers Name", styleSheetModel.getBuyersName());
                         setLayout("Product detail", styleSheetModel.getProduectDetail());
                         setLayout("Shipment Date", styleSheetModel.getShipmentDate());
-                        setLayout("Total order quality ", styleSheetModel.getTotalQuality());
+                        setLayout("Total order quanity ", styleSheetModel.getTotalQuality());
                         setLayout("sam ", styleSheetModel.getSum());
                         setLayout("size ", styleSheetModel.getSize());
                         setLayout("Total Man power ", styleSheetModel.getTotalManPower());
