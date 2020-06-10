@@ -22,6 +22,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import static com.example.saurabhomer.style2.cardviewmenu.CardMenuP.sheetOneModel;
 import static com.example.saurabhomer.style2.ui.home.HomeFragment.STYLE_NUMBER;
+import static com.example.saurabhomer.style2.ui.home.HomeFragment.total_man_power;
 
 public class ResultActivity extends AppCompatActivity {
 
@@ -174,6 +175,7 @@ public class ResultActivity extends AppCompatActivity {
 
                     setLayout("Total Output", (sheetModifyModel.getTotalOutput()));
                     setLayout("Total Target",(sheetModifyModel.getTotaltarget()));
+                    setLayout("Line Efficiency",sheetModifyModel.getLineEffi());
                 }
                 else
                 {

@@ -43,7 +43,7 @@ public class GalleryFragment extends Fragment implements
     AutoCompleteTextView styleNu;
     AutoCompleteTextView productName;
     AutoCompleteTextView productDes;
-    AutoCompleteTextView line_effi;
+
     AutoCompleteTextView sum;
     AutoCompleteTextView orderNumber;
     Spinner line_nu;
@@ -75,7 +75,7 @@ public class GalleryFragment extends Fragment implements
         productName = root.findViewById(R.id.edt_product_name).findViewById(R.id.atvCommon);
         buyerName = root.findViewById(R.id.edt_buyer_name).findViewById(R.id.atvCommon);
         productDes = root.findViewById(R.id.edt_product_description).findViewById(R.id.atvCommon);
-        line_effi = root.findViewById(R.id.edt_lineefficency).findViewById(R.id.atvCommon);
+
         line_nu = root.findViewById(R.id.edt_line_nu).findViewById(R.id.spinner);
         total_man_power = root.findViewById(R.id.edt_total_man_power).findViewById(R.id.atvCommon);
         orderNumber = root.findViewById(R.id.edt_order_quality).findViewById(R.id.atvCommon);
@@ -139,8 +139,7 @@ public class GalleryFragment extends Fragment implements
                                                                                            sum.getText().toString(),
                                                                                            line_nu.getSelectedItem().toString(),
                                                                                            size.getText().toString(),
-                                                                                           total_man_power.getText().toString(),
-                                                                                           line_effi.getText().toString()
+                                                                                           total_man_power.getText().toString()
                                                                                           );
                                                                                    //    ));
 
@@ -155,6 +154,9 @@ public class GalleryFragment extends Fragment implements
 
                                                                                                progressDialog.dismiss();
                                                                                                Toast.makeText(getContext(),"Data is successfully inserted ", Toast.LENGTH_SHORT).show();
+                                                                                               Intent i = new Intent(getContext(),HomeActivity.class);
+                                                                                               startActivity(i);
+                                                                                               getActivity().finish();
                                                                                            }
                                                                                            else {
                                                                                                Toast.makeText(getContext(),"oops ! Please try again ", Toast.LENGTH_SHORT).show();

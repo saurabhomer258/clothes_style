@@ -30,6 +30,7 @@ import java.util.Date;
 import static com.example.saurabhomer.style2.cardviewmenu.CardMenuP.sheetOneModel;
 import static com.example.saurabhomer.style2.ui.home.HomeFragment.STYLE_NUMBER;
 import static com.example.saurabhomer.style2.ui.home.HomeFragment.date_in_globler;
+import static com.example.saurabhomer.style2.ui.home.HomeFragment.total_man_power;
 import static com.example.saurabhomer.style2.ui.home.HomeFragment.total_order_qu;
 
 public class SheetModify extends AppCompatActivity {
@@ -39,6 +40,7 @@ public class SheetModify extends AppCompatActivity {
     TextView lap1,lap2,lap3,lap4,lap5,lap6,lap7,lap8,lap9,lap10,lap11,lap12;
     EditText output1,output2,output3,output4,output5,output6,output7,output8,output9,output10,output11,output12;
     EditText target1,target2,target3,target4,target5,target6,target7,target8,target9,target10,target11,target12;
+    EditText lineEffi;
     Button info_btn;
 
     EditText totoutput,tottarget;
@@ -107,7 +109,7 @@ public class SheetModify extends AppCompatActivity {
         target10 = (EditText) findViewById(R.id.target10);
         target11 = (EditText) findViewById(R.id.target11);
         target12 = (EditText) findViewById(R.id.target12);
-
+        lineEffi =(EditText) findViewById(R.id.line_eff);
         info_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -188,6 +190,13 @@ public class SheetModify extends AppCompatActivity {
                 sheetModifyModel.setTotalOutput(Integer.toString(outputsum));
                 sheetModifyModel.setTotaltarget(Integer.toString(targetsum));
                 sheetModifyModel.setTotallineoutput(Integer.toString(outputsum));
+                try {
+                    sheetModifyModel.setLineEffi(((outputsum * targetsum * 100) / 60 * (Integer.parseInt(total_man_power)) + ""));
+                }
+                catch (Exception e){
+                    sheetModifyModel.setLineEffi(0+"");
+                }
+
 
                 try
                 {
@@ -292,7 +301,12 @@ public class SheetModify extends AppCompatActivity {
                 sheetModifyModel.setTotalOutput(Integer.toString(outputsum));
                 sheetModifyModel.setTotaltarget(Integer.toString(targetsum));
                 sheetModifyModel.setTotallineoutput(Integer.toString(outputsum));
-
+                try {
+                    sheetModifyModel.setLineEffi(((outputsum * targetsum * 100) / 60 * (Integer.parseInt(total_man_power)) + ""));
+                }
+                catch (Exception e){
+                    sheetModifyModel.setLineEffi(0+"");
+                }
                 try
                 {
                     sheetModifyModel.setRemainingquantity(String.valueOf((Integer.parseInt(total_order_qu)-outputsum)));

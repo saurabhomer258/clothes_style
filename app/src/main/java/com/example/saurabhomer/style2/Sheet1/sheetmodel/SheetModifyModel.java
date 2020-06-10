@@ -8,6 +8,15 @@ public class SheetModifyModel {
     String target1,target2,target3,target4,target5,target6,target7,target8,target9,target10,target11,target12;
     String totalOutput,totaltarget;
     String remainingquantity, date,totallineoutput,rundays;
+    String lineEffi;
+
+    public String getLineEffi() {
+        return lineEffi;
+    }
+
+    public void setLineEffi(String lineEffi) {
+        this.lineEffi = lineEffi;
+    }
 
     public String getRemainingquantity() {
         return remainingquantity;

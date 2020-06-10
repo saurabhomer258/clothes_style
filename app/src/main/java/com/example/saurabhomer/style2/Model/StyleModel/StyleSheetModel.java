@@ -8,9 +8,9 @@ public class StyleSheetModel {
     private String totalQuality;
     private String ShipmentDate;
     private String sum;
-    private String lineEfficiency;
+
     private String totalManPower;
-    public StyleSheetModel(String sheetNumber, String buyersName, String produectDetail, String description, String totalQuality, String shipmentDate, String sum, String lineNumber, String size,String totalManPower, String lineEfficiency) {
+    public StyleSheetModel(String sheetNumber, String buyersName, String produectDetail, String description, String totalQuality, String shipmentDate, String sum, String lineNumber, String size,String totalManPower) {
         this.sheetNumber = sheetNumber;
         BuyersName = buyersName;
         ProduectDetail = produectDetail;
@@ -21,7 +21,7 @@ public class StyleSheetModel {
         this.lineNumber = lineNumber;
         this.totalManPower = totalManPower;
         this.size = size;
-        this.lineEfficiency = lineEfficiency;
+
     }
 
     public StyleSheetModel() {
@@ -113,11 +113,5 @@ public class StyleSheetModel {
         this.lineNumber = lineNumber;
     }
 
-    public String getLineEfficiency() {
-        return lineEfficiency;
-    }
 
-    public void setLineEfficiency(String lineEfficiency) {
-        this.lineEfficiency = lineEfficiency;
-    }
 }

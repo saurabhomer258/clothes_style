@@ -189,6 +189,7 @@ public class SheetModifyAdmin extends AppCompatActivity {
                     setLayout("Total Output",sheetModifyModel.getTotalOutput());
                     setLayout("Total Target",sheetModifyModel.getTotaltarget());
 
+                    setLayout("Line Efficiency",sheetModifyModel.getLineEffi());
 
                     progressDialog.hide();
                 }
