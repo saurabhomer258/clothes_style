@@ -63,12 +63,12 @@ public class CommonStyleData extends AppCompatActivity
                         setLayout("Sheet Number", STYLE_NUMBER);
                         setLayout("Buyers Name", styleSheetModel.getBuyersName());
                         setLayout("Product detail", styleSheetModel.getProduectDetail());
-                        setLayout("Shipment Date", styleSheetModel.getShipmentDate());
+                        setLayout("Starting Date", styleSheetModel.getShipmentDate());
                         setLayout("Total order quanity ", styleSheetModel.getTotalQuality());
                         setLayout("Line Number",styleSheetModel.getLineNumber());
                         setLayout("sam ", styleSheetModel.getSum());
                         setLayout("size ", styleSheetModel.getSize());
-                        setLayout("Line Efficiency",styleSheetModel.getLineEfficiency());
+
                         setLayout("Total Man power ", styleSheetModel.getTotalManPower());
                     }
 //                    setLayout("color",styleSheetModel.getColor());

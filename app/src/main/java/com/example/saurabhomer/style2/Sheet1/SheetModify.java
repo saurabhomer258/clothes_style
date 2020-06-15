@@ -191,10 +191,10 @@ public class SheetModify extends AppCompatActivity {
                 sheetModifyModel.setTotaltarget(Integer.toString(targetsum));
                 sheetModifyModel.setTotallineoutput(Integer.toString(outputsum));
                 try {
-                    sheetModifyModel.setLineEffi(((outputsum * targetsum * 100) / 60 * (Integer.parseInt(total_man_power)) + ""));
+                    sheetModifyModel.setLineEffi(((outputsum * targetsum * 100) / 60 * (Integer.parseInt(total_man_power)*600) + "%"));
                 }
                 catch (Exception e){
-                    sheetModifyModel.setLineEffi(0+"");
+                    sheetModifyModel.setLineEffi(0+"%");
                 }
 
 
